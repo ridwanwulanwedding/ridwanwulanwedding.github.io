@@ -12,7 +12,11 @@
 </head>
 
 <body>
-
+<audio loop preload ="auto" id="myAudio"> <source src="cant_smile_without_you.mp3"> </audio>
+<a onclick="playAudio()" type="button" id="un-mute" class="float">
+<img src="music.png" width="30px;"> </a>
+<a onclick="pauseAudio()" type="button" id="mute" class="float" style="display: none;">
+<img src="music_mute.png" width="30px;"> </a>    
     <nav class="navbar navbar-default probootstrap-navbar">
         <div class="container">
             <div class="navbar-header">
@@ -48,7 +52,7 @@
         </div>
         <ul class="slides">
             <li style="background-image: url(img/rdwwln1.jpeg)" data></li>
-            <li style="background-image: url(img/rdwwln2.jpeg)"></li>
+            <li style="background-image: url(img/rdwwln2.jpg)"></li>
             <li style="background-image: url(img/rdw_wln3.jpg)"></li>
         </ul>
     </section>
