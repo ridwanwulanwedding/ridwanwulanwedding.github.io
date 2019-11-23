@@ -10,8 +10,18 @@
     <link rel="stylesheet" href="css/styles-merged.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
-
 <body>
+    <div style="position:fixed;bottom:0;right:0;">
+        <audio loop="true" preload="auto" id="myAudio">
+          <source src="cant_smile_without_you.mp3">
+        </audio>
+        <a onclick="playAudio()" type="button" id="un-mute" class="float">
+            <img src="/img/music_mute.png" width="30px;">
+        </a>
+        <a onclick="pauseAudio()" type="button" id="mute" class="float" style="display: none;">
+            <img src="img/music.png" width="30px;">
+        </a>
+    </div>
     <nav class="navbar navbar-default probootstrap-navbar">
         <div class="container">
             <div class="navbar-header">
@@ -22,17 +32,6 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="/" title="uiCookies:Wedding">Wulan <em>&amp;</em> Ridwan</a>
-            </div>
-            <div style="float:right">
-                <audio loop="true" preload="auto" id="myAudio">
-                  <source src="cant_smile_without_you.mp3">
-                </audio>
-                <a onclick="playAudio()" type="button" id="un-mute" class="float">
-                    <img src="/img/music_mute.png" width="30px;">
-                </a>
-                <a onclick="pauseAudio()" type="button" id="mute" class="float" style="display: none;">
-                    <img src="img/music.png" width="30px;">
-                </a>
             </div>
             <div id="navbar-collapse" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
