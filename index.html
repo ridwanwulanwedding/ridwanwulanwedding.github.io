@@ -12,17 +12,19 @@
 </head>
 
 <body>
-    <audio loop="true" preload="auto" id="myAudio">
-      <source src="cant_smile_without_you.mp3">
-    </audio>
-    <a onclick="playAudio()" type="button" id="un-mute" class="float">
-        <img src="http://grinvitation.com/cintyasyahrizalwedding/lib_template/elegante2/images/music-mute.png" width="30px;">
-    </a>
-    <a onclick="pauseAudio()" type="button" id="mute" class="float" style="display: none;">
-        <img src="http://grinvitation.com/cintyasyahrizalwedding/lib_template/elegante2/images/music.png" width="30px;">
-    </a>
     <nav class="navbar navbar-default probootstrap-navbar">
         <div class="container">
+            <div>
+                <audio loop="true" preload="auto" id="myAudio">
+                  <source src="cant_smile_without_you.mp3">
+                </audio>
+                <a onclick="playAudio()" type="button" id="un-mute" class="float">
+                    <img src="/img/music-mute.png" width="30px;">
+                </a>
+                <a onclick="pauseAudio()" type="button" id="mute" class="float" style="display: none;">
+                    <img src="img/music.png" width="30px;">
+                </a>
+            </div>
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
